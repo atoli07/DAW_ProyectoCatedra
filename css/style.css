@@ -21,16 +21,6 @@ body{
     margin-bottom: 2%;
 }
 
-/*Reglas de estilo para el header*/
-header{
-    background-color: #292C3F;
-    padding: 20px 0;
-    color: white;
-    background-image: url(../img/mitur_banner.jpg);
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-}
 /*Reglas de estilo para el banner o slider de presentacion*/
 
 .banner{
