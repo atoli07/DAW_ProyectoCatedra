@@ -141,6 +141,30 @@ body{
 }
 .menu ul ul li:hover i{ color: #fff; }
 
+/*Reglas de estilo para el mapa*/
+
+section{
+    background-color: cornflowerblue;
+    height: 700px;
+}
+
+div.mapa{
+    padding-top: 125px;
+    height: max-content;
+    width: 75%;
+    margin: auto;
+}
+
+.mapa path{
+    fill: forestgreen;
+    stroke: ghostwhite;
+    stroke-width: 2px;
+}
+
+.mapa path:hover{
+    fill: greenyellow;
+}
+
 /*Reglas de estilo para el pie de pagina*/
 footer{
     background-color: #292C3F;
@@ -205,7 +229,7 @@ footer{
       margin-bottom:3%;
 }
 
-/*Reglas de estilo para que el menu sea adaptativo*/
+/*Reglas de estilo para que el menu y mapa sea adaptativo*/
 
 @media screen and (max-width: 1315px) {
 
