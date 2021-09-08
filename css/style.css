@@ -162,7 +162,7 @@ div.mapa{
 }
 
 .mapa path:hover{
-    fill: greenyellow;
+    fill: #269E26;
 }
 
 /*Reglas de estilo para el pie de pagina*/
@@ -326,4 +326,82 @@ footer{
 	#menu_desplegable:checked + .menu{
 		transform: translateX(0%);
 	}
+}
+/*tv*/
+@media (min-width: 1400px) and (max-width:1700px) {
+    section{
+        height: 85%;
+    }
+    
+    div.mapa{
+        padding-top: 425px;
+        height: max-content;
+        width: 75%;
+        margin: auto;
+    }
+}
+/*laptops y tablets grandes*/
+@media (min-width:1200px) and (max-width:1399.98px) {
+    section{
+        height: 78.5%;
+    }
+    
+    div.mapa{
+        padding-top: 100px;
+        height: max-content;
+        width: 90%;
+        margin: auto;
+    }
+}
+/*tablets*/
+@media (min-width:992px) and (max-width:1199.98px){
+    section{
+        height: 75%;
+    }
+    
+    div.mapa{
+        padding-top: 100px;
+        height: max-content;
+        width: 87.5%;
+        margin: auto;
+    }
+}
+/*telefonos de lado y algunas tablets*/
+@media (min-width:768px) and (max-width:991.98px) {
+    section{
+        height: 75%;
+    }
+    
+    div.mapa{
+        padding-top: 105px;
+        height: max-content;
+        width: 90%;
+        margin: auto;
+    }
+}
+/*telefonos normal y de lado*/
+@media (min-width:576px) and (max-width:767.98px) {
+    section{
+        height: 75%;
+    }
+    
+    div.mapa{
+        padding-top: 105px;
+        height: max-content;
+        width: 95%;
+        margin: auto;
+    }
+}
+/*telefonos normal*/
+@media (max-width: 575.98px) { 
+    section{
+        height: 75%;
+    }
+    
+    div.mapa{
+        padding-top: 105px;
+        height: max-content;
+        width: 95%;
+        margin: auto;
+    }
 }
