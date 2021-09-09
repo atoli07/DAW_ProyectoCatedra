@@ -8,10 +8,55 @@
     <!--Tipo de funte de googlo fonts-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!--Hoja de estilo-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Cabañas</title>
 </head>
 <body>
+
+    <header id="cabezera">
+        <div class="contenedor-header">
+        <a class="logo" href="#"><img src="img/logo.JPG" alt="logo"></a>
+          <div class="header_right">
+            <label for="menu_desplegable" class="icono_nav"><i class="fa fa-bars"></i></label>
+            <input id="menu_desplegable" type="checkbox" name="">
+            <nav class="menu">
+              <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="#">San Salvador</a></li>
+                        <li><a href="../San-Vicente/San Vicente.html">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../san-miguel/sanmiguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Desarrolladores</a></li>
+              </ul>
+            </nav>    
+          </div>
+        </div>
+    </header>
 
     <section class="banner">
             <div class="cotenido-banner">
@@ -20,6 +65,18 @@
                 <a class="boton-seguir"href="#principal"></a>
             </div>
         </section>
+    
+    <div class="submenu">
+        <div class="submenu-content">
+            <ul>
+                <li> <a href="#Datos-Historicos" >Datos historicos</a></li>
+                <li><a href="#municipios" >Ir a municipio</a></li>
+                <li> <a href="#lugares-turisticos">Lugares turisticos</a></li>
+                <li> <a href="#celebridades">Personajes celebres</a></li>
+            </ul>
+        </div>
+    </div>
+    <a name="arriba"></a><!--se agrego el name par que el link que esta abajo lo redirija hacia el inicio-->
 
     <div class="main">
 
@@ -189,6 +246,7 @@
 
     </div>
     
+    <button class="arriba"><a href="#arriba" title="Ir Arriba">Ir arriba</a></button><!--se agrego el link para redirigir al inicio de la pagina-->
 
     <footer>
         <div class="contenedor-footer">

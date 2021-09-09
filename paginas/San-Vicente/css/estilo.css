@@ -20,6 +20,132 @@ body{
     box-shadow: 3px 3px 15px 3px rgba(77, 77, 77, 0.6);
     margin-bottom: 2%;
 }
+
+
+/*Reglas de estilo para el menu*/
+
+#cabezera{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #313945;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+
+
+
+.logo img{
+    width: 170px;
+}
+
+#menu_desplegable{
+    display: none;
+}
+
+
+.contenedor-header{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icono_nav{
+    display: none;
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+
+}
+.menu ul li{
+    float: left ;
+    margin-right: 30px;
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+.menu ul li a {
+    color: white;
+    display: block;
+    line-height: 1.4;
+    text-decoration: none;
+    padding: 5px 15px;
+
+}
+.menu ul li:hover > a{
+    color: #3C81AE;
+}
+.menu ul li i{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #3C81AE;
+}
+.menu ul li:hover > i{ color: white }
+
+.menu ul ul{
+    position: absolute;
+    left: 0;
+    top:calc(100% + 15px);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+.menu ul ul li{
+    float: none;
+    margin:0;
+    border-bottom: 1px solid #fff;
+}
+.menu > ul > li > ul:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    height: 16px;
+    width: 100%;
+    left: 0;
+}
+
+.menu ul ul ul{
+    left: 100%;
+    top:0;
+}
+.menu ul li:hover > ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu ul ul li a{
+    background-color: #313945;
+}
+.menu ul li:hover ul li:hover > a{
+    color: #fff;
+    background:#8F8F8F;
+}
+.menu ul ul li i{
+    transform: rotate(-90deg);
+}
+.menu ul ul li:hover i{ color: #fff; }
+
+
 /*Reglas de estilo para el banner o slider de presentacion*/
 
 .banner{
@@ -95,14 +221,12 @@ body{
 
 /*Reglas de estilo para el contenido*/
 
-.info p{
-    margin-top: 3%;
-    margin-bottom: 4%;
-}
 
 .Primeros-Datos{
     margin-top: 2%;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color: rgba(75, 86, 198, 0.2);
     padding: .8%;
 }
@@ -114,7 +238,12 @@ body{
     margin-right: 3%;
     padding: 3%;
     flex-wrap: nowrap;
-    
+}
+
+
+.info p{
+    margin-top: 7%;
+    margin-bottom: 8%;
 }
 
 
@@ -387,6 +516,108 @@ footer{
 }
 
 
+
+/*Reglas de estilo para que el menu sea adaptativo*/
+
+@media screen and (max-width: 1315px) {
+
+    .menu ul li{ margin: 0 ; font-size: 16px; }
+  	.menu ul li a{ padding: 5px 10px; }
+  	
+  	.icono_nav,
+  	#menu_desplegable{  display: none;}
+
+  	.logo img{
+
+		width: 150px;
+	}
+
+
+	.icono_nav{ 
+		display: block;
+		position: relative;
+		z-index: 10;
+		color: #fff;
+		font-size: 36px;
+		padding-right: 20px;
+
+	} 
+
+	.menu {
+		position: fixed;
+		left: 0;
+		top: 100px;
+		padding:0;
+		background-color: #313945;
+		z-index: 5;
+		height: calc(100vh - 74px);
+		overflow: auto;
+		width: calc(100% - 80px);
+		transition: all 0.3s ease-out;
+		transform: translateX(-100%);
+	}
+
+	.menu ul li {
+		float: none;
+		margin: 0 !important;
+		padding: 0 !important;
+		border-bottom: 1px solid;
+	}
+
+	.menu ul li a {
+		display: block;
+		color: #fff;
+		padding: 10px;
+	}
+
+	.menu > ul > li:hover > a{
+		background-color: #313945;
+		color: #fff;
+	} 
+
+	.menu ul ul{
+		position: static;
+		pointer-events: auto;
+		opacity: 1;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.menu ul ul li a{
+		padding-left: 30px;
+	}
+
+	.menu ul ul ul li a{
+		padding-left: 60px;
+	}
+
+	.menu ul ul ul ul li a{
+		padding-left: 90px;
+	}
+
+	.menu ul li:hover > ul {
+		height: auto;
+	}
+
+	.menu ul li i{ right: 10px !important; }
+	.menu ul li:hover > i{ color: #fff }
+	.menu ul ul li i{transform: rotate(0deg);}
+
+	#menu_desplegable{
+		opacity: 0;
+		position: fixed;
+		width: 0;
+		height: 0;
+		margin: 0;
+	}
+
+	#menu_desplegable:checked + .menu{
+		transform: translateX(0%);
+	}
+}
+
+
+
 @media screen and (max-width:1024px) {
 
     .main{
@@ -394,13 +625,15 @@ footer{
         padding: 0;
     }
 
+
     .info{
         width: 50%;
+        font-size: 1rem;
     }
 
     .mapa img{
         display: block;
-        width: 40%;
+        width: 70%;
         margin: auto;
     }
 
@@ -458,13 +691,18 @@ footer{
         padding: 0;
     }
 
+    .Primeros-Datos{
+        display: block;
+    }
+
     .info{
+        font-size: 1.1rem;
         width: 90%;
     }
 
     .mapa img{
         display: block;
-        width: 75%;
+        width: 50%;
         margin: auto;
     }
 
@@ -616,4 +854,60 @@ footer{
         font-size: 1.1rem;
     }
 
+}
+
+
+/* submenu */
+
+.submenu-content{
+    position:static;
+    top:100px;
+    margin:auto;
+    text-align: center;
+}
+        
+.submenu-content a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+   
+}
+            
+.submenu-content li{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    padding:5px 10px;
+    border:1px solid #000;
+    text-align:center;
+    background-color:#000;
+    color:#fff;
+}
+            
+.submenu-content li:hover{
+    background-color:#fff;
+    color:#000;
+}
+            
+.submenu-content li>ul{
+position:fixed;
+left:0px;
+top:30px;
+display:block;
+}
+/*boton ir arriba */
+.arriba{  
+    background:#a5ecb4;
+    bottom:0px;
+    display: block;
+    height: 70px;
+    position: fixed;
+    right:50px;
+    width:70px;
+    border-radius: 50%;
+    color: black;
+}
+
+.arriba a{
+    text-decoration: none;
 }
