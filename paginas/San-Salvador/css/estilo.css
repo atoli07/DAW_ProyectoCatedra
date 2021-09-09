@@ -1,0 +1,918 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #DDDDDD;
+    font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*Reglas de estilo para afectar el contenedor principal*/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 91%;
+    margin: auto;
+    background-color: white;
+    padding: 3px;
+    padding-bottom: 3%;
+    box-shadow: 3px 3px 15px 3px rgba(77, 77, 77, 0.6);
+    margin-bottom: 2%;
+}
+
+
+/*Reglas de estilo para el menu*/
+
+#cabezera{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #313945;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+
+
+
+.logo img{
+    width: 170px;
+}
+
+#menu_desplegable{
+    display: none;
+}
+
+
+.contenedor-header{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icono_nav{
+    display: none;
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+
+}
+.menu ul li{
+    float: left ;
+    margin-right: 30px;
+    position: relative;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+.menu ul li a {
+    color: white;
+    display: block;
+    line-height: 1.4;
+    text-decoration: none;
+    padding: 5px 15px;
+
+}
+.menu ul li:hover > a{
+    color: #3C81AE;
+}
+.menu ul li i{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #3C81AE;
+}
+.menu ul li:hover > i{ color: white }
+
+.menu ul ul{
+    position: absolute;
+    left: 0;
+    top:calc(100% + 15px);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+.menu ul ul li{
+    float: none;
+    margin:0;
+    border-bottom: 1px solid #fff;
+}
+.menu > ul > li > ul:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    height: 16px;
+    width: 100%;
+    left: 0;
+}
+
+.menu ul ul ul{
+    left: 100%;
+    top:0;
+}
+.menu ul li:hover > ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu ul ul li a{
+    background-color: #313945;
+}
+.menu ul li:hover ul li:hover > a{
+    color: #fff;
+    background:#8F8F8F;
+}
+.menu ul ul li i{
+    transform: rotate(-90deg);
+}
+.menu ul ul li:hover i{ color: #fff; }
+
+
+/*Reglas de estilo para el banner o slider de presentacion*/
+
+.banner{
+
+	width: 100%;
+	height: 560px;
+	background-color: rgba(77, 77, 77, 0.8);
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/img1.jpg');
+	transition: all .1s ease-in;
+	animation: slider 20s infinite linear;
+}
+
+
+.cotenido-banner{
+
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: rgba(77, 77, 77, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.cotenido-banner h1{
+
+	font-size: 3.7rem;
+	text-align: center;
+}
+
+@keyframes slider{
+
+	0%{
+		background-image: url('../img/img1.jpg');
+	}
+
+	25%{
+		background-image: url('../img/img1.jpg');
+	}
+
+
+	26%{
+		background-image: url('../img/img2.jpg');
+	}
+
+	50%{
+		background-image: url('../img/img2.jpg');
+	}
+
+
+	51%{
+		background-image: url('../img/img3.jpg');
+	}
+
+	75%{
+		background-image: url('../img/img3.jpg');
+	}
+
+
+	76%{
+		background-image: url('../img/img4.jpg');
+	}
+
+	100%{
+		background-image: url('../img/img4.jpg');
+	}
+}
+
+
+/*Reglas de estilo para el contenido*/
+
+
+.Primeros-Datos{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(75, 86, 198, 0.2);
+    padding: .8%;
+}
+
+.info{
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-right: 3%;
+    padding: 3%;
+    flex-wrap: nowrap;
+}
+
+
+.info p{
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+
+
+
+/*Reglas de estilo para afectar la seccion de datos historicos*/
+.Datos-Historicos{
+    width: 100%;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.historia{
+    width: 31%;
+    height: 480px;
+    background-color: #f0ef9eff;
+    float: left;
+    margin: 1%;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 1px rgba(77, 77, 77, 0.6);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.historia:hover{
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+}
+
+.Datos-Historicos h2{
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+    color: #292C3F;
+    border-bottom: 2px solid #292C3F;
+}
+
+.historia p{
+    padding: 10px;
+    margin: 0px;
+    text-align: justify;
+}
+
+
+
+/*Reglas de estilo para la seccion de municipios*/
+.municipios{
+    width: 100%;
+    margin-top: 2%;
+    background-color: rgba(75, 86, 198, 0.2);
+}
+
+.municipios p{
+    width: 200px;
+    float: left;
+    margin: 1% 3%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #50B2AB;
+    box-shadow: 1px 1px 10px 1px rgba(77, 77, 77, 0.9);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.municipios p:hover{
+    transform: scale(1.04);
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.08);
+}
+
+
+.municipios h2{
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    color: #292C3F;
+    border-bottom: 2px solid #292C3F;
+}
+
+
+
+/*Reglas de estilo para la seccion de lugares turisticos*/
+.lugares-turisticos{
+    width: 100%;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.lugares-turisticos h2{
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    color: #292C3F;
+    border-bottom: 2px solid #292C3F;
+}
+
+
+.lugar{
+    position: relative;
+    width: 33.33%;
+    height: 300px;
+    background-size: cover;
+	background-position: center;
+    float: left;
+}
+
+
+.lugar img{
+    width: 100%;
+    height: 300px;
+}
+
+
+.datos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(41, 44, 63, 0.6);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.datos p{
+    padding: 3%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.lugar:hover .datos{
+    transform: scale(1);
+}
+
+
+
+/*Reglas de estilo para la seccion de celebridades*/
+.celebridades{
+    width: 100%;
+    margin-top: 2%;
+    background-color: rgba(75, 86, 198, 0.2);
+}
+
+
+.celebridades h2{
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+    color: #292C3F;
+    border-bottom: 2px solid #292C3F;
+    margin-bottom: 1%;
+}
+
+
+.personaje{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    background-size: cover;
+	background-position: center;
+    float: left;
+}
+
+
+.personaje img{
+    width: 100%;
+    height: 250px;
+}
+
+.informacion-cleb{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    color: white;
+    background: rgba(41, 44, 63, 0.6);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacion-cleb p{
+    padding: 5%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.personaje:hover .informacion-cleb{
+    transform: scale(1);
+}
+
+/*Reglas de estilo para el pie de pagina*/
+
+
+footer{
+    background-color: #292C3F;
+    padding: 20px 0;
+    color: white;
+}
+  
+.contenedor-footer{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+   
+}
+  
+.contenido-izquierdo{
+      width: 700px;
+      padding: 20px 5px;
+}
+  
+.redes-sociales{
+  
+      width: 230px;
+      float: left;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+}
+  
+  
+.redes-sociales>img{
+      width: 50px;
+      float: left;
+      margin-right: 10px;
+}
+  
+.redes-sociales a{
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+}
+
+.redes-sociales a:hover{
+      color: #4B56C6;
+}
+  
+.contenido-derecho{
+      padding: 20px 25px;
+      border-left: solid #4B56C6 2px;
+}
+  
+.contenido-derecho h3, .contenido-izquierdo h3{
+    font-size: 1.3rem;
+    margin-bottom: 3%;
+}
+  
+.contenido-derecho p{
+      margin-bottom:3%;
+}
+
+
+
+/*Reglas de estilo para que el menu sea adaptativo y el contenido de la pagina*/
+
+@media screen and (max-width: 1315px) {
+
+    .menu ul li{ margin: 0 ; font-size: 16px; }
+  	.menu ul li a{ padding: 5px 10px; }
+  	
+  	.icono_nav,
+  	#menu_desplegable{  display: none;}
+
+  	.logo img{
+
+		width: 150px;
+	}
+
+
+	.icono_nav{ 
+		display: block;
+		position: relative;
+		z-index: 10;
+		color: #fff;
+		font-size: 36px;
+		padding-right: 20px;
+
+	} 
+
+	.menu {
+		position: fixed;
+		left: 0;
+		top: 100px;
+		padding:0;
+		background-color: #313945;
+		z-index: 5;
+		height: calc(100vh - 74px);
+		overflow: auto;
+		width: calc(100% - 80px);
+		transition: all 0.3s ease-out;
+		transform: translateX(-100%);
+	}
+
+	.menu ul li {
+		float: none;
+		margin: 0 !important;
+		padding: 0 !important;
+		border-bottom: 1px solid;
+	}
+
+	.menu ul li a {
+		display: block;
+		color: #fff;
+		padding: 10px;
+	}
+
+	.menu > ul > li:hover > a{
+		background-color: #313945;
+		color: #fff;
+	} 
+
+	.menu ul ul{
+		position: static;
+		pointer-events: auto;
+		opacity: 1;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.menu ul ul li a{
+		padding-left: 30px;
+	}
+
+	.menu ul ul ul li a{
+		padding-left: 60px;
+	}
+
+	.menu ul ul ul ul li a{
+		padding-left: 90px;
+	}
+
+	.menu ul li:hover > ul {
+		height: auto;
+	}
+
+	.menu ul li i{ right: 10px !important; }
+	.menu ul li:hover > i{ color: #fff }
+	.menu ul ul li i{transform: rotate(0deg);}
+
+	#menu_desplegable{
+		opacity: 0;
+		position: fixed;
+		width: 0;
+		height: 0;
+		margin: 0;
+	}
+
+	#menu_desplegable:checked + .menu{
+		transform: translateX(0%);
+	}
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .main{
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .info{
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .mapa img{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    .cotenido-banner h1{
+        font-size: 2.2rem;
+    }
+    .Datos-Historicos{
+        width: 100%;
+    }
+
+    .historia{
+        width: 95%;
+        height: initial;
+        margin: 10px 23px;
+    }
+
+    .municipios p{
+        margin: 2% 5.3%;
+    }
+
+    .lugar{
+        height: 230px;
+    }
+
+    .lugar img{
+        height: 230px;
+    }
+
+
+    .celebridades{
+        margin-bottom: 3%;
+    }
+
+
+    .personaje{
+        width: 35%;
+        height: 260px;
+        margin: 1.7% 7.4%;
+    }
+
+    .personaje img{
+        height: 260px;
+    }
+
+      
+}
+
+
+
+
+@media screen and (max-width:824px) {
+
+    .main{
+        width: 100%;
+        padding: 0;
+    }
+
+    .Primeros-Datos{
+        display: block;
+    }
+
+    .info{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .mapa img{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .cotenido-banner h1{
+        font-size: 2.2rem;
+    }
+
+    .Datos-Historicos{
+        width: 100%;
+    }
+
+    .historia{
+        width: 95%;
+        height: initial;
+        margin: 10px 18px;
+    }
+
+    .municipios p{
+        margin: 2% 10%;
+    }
+
+    .lugar{
+        width: 50%;
+        height: 290px;
+    }
+
+    .lugar img{
+        height: 290px;
+    }
+
+
+    .personaje{
+        width: 35%;
+        height: 230px;
+        margin: 1.7% 7.4%;
+    }
+
+    .personaje img{
+        height: 230px;
+    }
+
+    .informacion-cleb p{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width:737px) {
+
+    .municipios p{
+        margin: 2% 9%;
+    }
+
+}
+
+@media screen and (max-width:667px) {
+
+    .municipios p{
+        margin: 2% 7%;
+    }
+
+}
+
+
+@media screen and (max-width:540px) {
+
+
+    .info p{
+        font-size: 1.1rem;
+    }
+
+
+    .historia{
+        font-size: 1.1rem;
+    }
+
+    .municipios p{
+        
+        margin: 2% 27%;
+    }
+
+    .lugar{
+        width: 80%;
+        height: 270px;
+        margin: 1% 9%;
+    }
+
+    .lugar img{
+        height: 270px;
+    }
+
+
+    .personaje{
+        width: 80%;
+        height: 300px;
+        margin: 1.7% 10%;
+    }
+
+    .personaje img{
+        height: 300px;
+    }
+
+    .informacion-cleb p{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:414px) {
+
+    .historia{
+        width: 100%;
+        height: initial;
+        font-size: 1.1rem;
+        margin: 10px 0px;
+    }
+
+    .municipios p{
+        font-size: 1.1rem;
+        margin: 2% 20%;
+    }
+
+    .lugar{
+        width: 80%;
+        height: 270px;
+        margin: 1% 9%;
+    }
+
+    .lugar img{
+        height: 270px;
+    }
+
+
+    .personaje{
+        width: 80%;
+        height: 260px;
+        margin: 1.7% 10%;
+    }
+
+    .personaje img{
+        height: 260px;
+    }
+
+    .informacion-cleb p{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* submenu */
+
+.submenu-content{
+    position:static;
+    top:100px;
+    margin:auto;
+    text-align: center;
+}
+        
+.submenu-content a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+   
+}
+            
+.submenu-content li{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    padding:5px 10px;
+    border:1px solid #000;
+    text-align:center;
+    background-color:#000;
+    color:#fff;
+}
+            
+.submenu-content li:hover{
+    background-color:#fff;
+    color:#000;
+}
+            
+.submenu-content li>ul{
+position:fixed;
+left:0px;
+top:30px;
+display:block;
+}
+/*boton ir arriba */
+.arriba{  
+    background:#a5ecb4;
+    bottom:0px;
+    display: block;
+    height: 70px;
+    position: fixed;
+    right:50px;
+    width:70px;
+    border-radius: 50%;
+    color: black;
+}
+
+.arriba a{
+    text-decoration: none;
+}
