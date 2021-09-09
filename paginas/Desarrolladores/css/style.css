@@ -642,10 +642,7 @@ div li{
     text-align:center;
     background-color:#000;
     color:#fff;
-<<<<<<< HEAD:paginas/San-Miguel/css/style.css
-=======
     text-decoration:none;
->>>>>>> 30b07be8124f68159490dc3bcbc46a4723dd3e2f:paginas/Desarrolladores/css/style.css
 }
             
 div li:hover{
@@ -659,11 +656,7 @@ left:0px;
 top:30px;
 display:block;
 }
-<<<<<<< HEAD:paginas/San-Miguel/css/style.css
-/*boton ir arriba display: block;*/
-=======
 /*boton ir arribadisplay: block; */
->>>>>>> 30b07be8124f68159490dc3bcbc46a4723dd3e2f:paginas/Desarrolladores/css/style.css
     .arriba{  
         background:#a5ecb4;
         bottom:0px;
