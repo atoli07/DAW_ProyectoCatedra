@@ -8,18 +8,6 @@ body{
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 91%;
-    margin: auto;
-    background-color: white;
-    padding: 3px;
-    padding-bottom: 3%;
-    box-shadow: 3px 3px 15px 3px rgba(77, 77, 77, 0.6);
-    margin-bottom: 2%;
-}
 
 /*Reglas de estilo para el menu*/
 
@@ -144,15 +132,21 @@ body{
 /*Reglas de estilo para el mapa*/
 
 section{
-    background-color: cornflowerblue;
-    height: 700px;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    background-color: cornflowerblue;    
+    height: 100vh;
+    padding: 10% 0%;
 }
 
 div.mapa{
+    position: relative;
     padding-top: 125px;
     height: max-content;
     width: 75%;
     margin: auto;
+    height: 100vh;
 }
 
 .mapa path{
@@ -167,9 +161,11 @@ div.mapa{
 
 /*Reglas de estilo para el pie de pagina*/
 footer{
+    position: relative;
     background-color: #292C3F;
     padding: 20px 0;
     color: white;
+    clear: both;
 }
   
 .contenedor-footer{
