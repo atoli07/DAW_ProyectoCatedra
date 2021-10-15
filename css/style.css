@@ -130,8 +130,7 @@ body{
 .menu ul ul li:hover i{ color: #fff; }
 
 /*Reglas de estilo para el mapa*/
-
-section{
+section.mapa{
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -157,6 +156,15 @@ div.mapa{
 
 .mapa path:hover{
     fill: #269E26;
+}
+
+/*Reglas de estilo para la administracion del mapa*/
+section{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    height: 100vh;
+    padding: 10% 0%;
 }
 
 /*Reglas de estilo para el pie de pagina*/
