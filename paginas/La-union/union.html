@@ -9,23 +9,25 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="css/style.css">
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <!-- script para los eventos del menu -->
+	<script src="../../js/menu.js"></script>
     <title>La Union</title>
 </head>
 <body>
 
     <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
-    <header id="cabezera">
-        <div class="contenedor-header">
-        <a class="logo" href="#"><img src="img/logo.JPG" alt="logo"></a>
-          <div class="header_right">
-            <label for="menu_desplegable" class="icono_nav"><i class="fa fa-bars"></i></label>
-            <input id="menu_desplegable" type="checkbox" name="">
-            <nav class="menu">
-              <ul>
+    <header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
                 <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="#">Zona Central</a>
+                <li id="submenu1"><a href="#">Zona Central</a>
                     <i class="fa fa-caret-down"></i>
-                    <ul>
+                    <ul id="menu1">
                         <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
                         <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
                         <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
@@ -35,28 +37,33 @@
                         <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Zona Occidental</a>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
                     <i class="fa fa-caret-down"></i>
-                    <ul>
+                    <ul id="menu2">
                         <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
                         <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
                         <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Zona Oriental</a>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
                     <i class="fa fa-caret-down"></i>
-                    <ul>
+                    <ul id="menu3">
                         <li><a href="../morazan/morazan.html">Morazan</a></li>
                         <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
                         <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
-                        <li><a href="#">La Union</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
                     </ul>
                 </li>
                 <li><a href="../Desarrolladores/Desarrolladores.html">Desarrolladores</a></li>
-              </ul>
-            </nav>    
-          </div>
-        </div>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
   </header>
 
 
