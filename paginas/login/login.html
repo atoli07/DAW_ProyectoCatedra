@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <h1>Iniciar sesión</h1>
+    <!-- contenedor principal -->
+    <div class="formulario">
+        <!-- formulario para solicitar los datos -->
+        <form name="form">                          
+            <!-- control para ingresar el nombre -->
+            <label for="user">Usuario:</label>
+            <input type="text" name="user" id="user" required/>
+
+            <!-- control para ingresar la biografia -->
+            <label for="biografia">Contraseña:</label>
+            <input type="password" name="password" id="password" required>
+            <br/><span class="alert" id="alertdatos">Usuario y contraseña erroneos.</span><br/>
+            
+            <!-- boton para enviar los datos -->
+            <div class="btn">
+                <input type="button" name="btnIngresar" id="btnIngresar" value="Ingresar"/>
+                <input type="button" name="btnRegistrarse" id="btnRegistrarse" value="Registrarse"/>
+            </div>            
+                        
+        </form>
+    </div>
+    
+</body>
+</html>
