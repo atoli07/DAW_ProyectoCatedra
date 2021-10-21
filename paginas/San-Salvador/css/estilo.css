@@ -135,7 +135,7 @@ body{
 
 .historia{
     width: 31%;
-    height: 480px;
+    height: 650px;
     background-color: #f0ef9eff;
     float: left;
     margin: 1%;
@@ -155,7 +155,7 @@ body{
 }
 
 .Datos-Historicos h2{
-    height: 50px;
+    
     text-align: center;
     padding-top: 2%;
     color: #292C3F;
@@ -200,7 +200,7 @@ body{
 
 
 .municipios h2{
-    height: 50px;
+    
     text-align: center;
     padding-top: 2%;
     margin-bottom: 1%;
@@ -219,7 +219,7 @@ body{
 
 
 .lugares-turisticos h2{
-    height: 50px;
+    
     text-align: center;
     padding-top: 2%;
     margin-bottom: 1%;
@@ -280,7 +280,7 @@ body{
 
 
 .celebridades h2{
-    height: 50px;
+    
     text-align: center;
     padding-top: 2%;
     color: #292C3F;
