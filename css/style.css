@@ -92,6 +92,39 @@ div.mapa{
     transform: scale(.9);
 }
 
+#usuario {
+    width: 100%;
+}
+
+#usuario p{
+    float: right;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+#btnCerrarS{
+    border: none;
+    padding: 13px;
+    font-size: 1rem;
+    background-color: #313945;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;    
+    float: right;
+    margin-top: 17px;
+}
+
+#btnCerrarS:hover {
+    cursor: pointer;
+    background-color: #434e5e;
+}
+
+#btnCerrarS:active {
+    transform: scale(.9);
+}
+
 
 /*Reglas de estilo para el pie de pagina*/
 footer{
@@ -169,7 +202,7 @@ footer{
     }
     
     div.mapa{
-        padding-top: 425px;
+        padding-top: 125px;
         height: max-content;
         width: 75%;
         margin: auto;
@@ -213,6 +246,11 @@ footer{
         width: 90%;
         margin: auto;
     }
+
+    #usuario {
+        margin-top: 4%;
+        width: 100%;
+    }
 }
 /*telefonos normal y de lado*/
 @media (min-width:576px) and (max-width:767.98px) {
@@ -226,6 +264,10 @@ footer{
         width: 95%;
         margin: auto;
     }
+    #usuario {
+        margin-top: 4%;
+        width: 100%;
+    }
 }
 /*telefonos normal*/
 @media (max-width: 575.98px) { 
@@ -238,5 +280,62 @@ footer{
         height: max-content;
         width: 95%;
         margin: auto;
+    }
+
+    
+
+    #usuario p {
+        margin-top: 0.5%;
+    }
+
+    #btnCerrarS {
+        float: right;
+        margin-top: 20%;
+    }
+}
+
+
+@media (max-width: 569px) {
+    section {
+        height: 75%;
+    }
+
+    div.mapa {
+        padding-top: 105px;
+        height: max-content;
+        width: 95%;
+        margin: auto;
+    }
+
+    #usuario p {
+        margin-top: 20%;
+    }
+
+    #btnCerrarS {
+        float: right;
+        margin-top: 20%;
+    }
+}
+
+
+@media (max-width: 444px) {
+    section {
+        height: 75%;
+    }
+
+    div.mapa {
+        padding-top: 105px;
+        height: max-content;
+        width: 95%;
+        margin: auto;
+    }
+
+    #usuario p {
+        margin-top: .5%;
+    }
+
+    #btnCerrarS {
+        float: right;
+        margin-top: 20%;
     }
 }
