@@ -51,6 +51,48 @@ div.mapa{
     fill: #269E26;
 }
 
+
+#popup {
+    position: absolute;
+    color: white;
+    padding: 13px;
+    display: none;
+    background-color: #292C3F;
+    z-index: 999;
+    border: solid 1px white;
+}
+
+#modificar{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+#modificar a{
+    display: block;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: tan;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+
+#modificar a:hover {
+    cursor: pointer;
+    background-color: rgb(184, 156, 121);
+    color: white;
+}
+
+#modificar a:active {
+    transform: scale(.9);
+}
+
+
 /*Reglas de estilo para el pie de pagina*/
 footer{
     position: relative;
