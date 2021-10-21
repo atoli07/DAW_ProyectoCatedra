@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <script src="js/menu.js"></script>
     <script src="js/datos.js"></script>
+    <script src="js/validarLogin.js"></script>
 </head>
 <body>
     <!-- cabecera con el menu de la pagina -->
@@ -62,9 +63,15 @@
         </nav>    
          
   </header>
-    
+  
+
+
   <!-- seccion con el mapa -->
     <section class="mapa">
+        <div id="usuario">            
+            <input type="button" id="btnCerrarS" value="Cerrar sesión">
+            <p id="nomUs"></p>
+        </div>
         <div class="mapa">
             <svg version="1.2" viewbox="0 0 1000 549" xmlns="http://www.w3.org/2000/svg">
                 
