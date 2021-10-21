@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modificar datos</title>
+    <!--Hoja de estilo-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <!--Tipo de funte de googlo fonts-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- script para los eventos del menu -->
+	<script src="../../js/menu.js"></script>
+    <!-- script para guardar los datos del formulario -->
+    <script src="js/modificar.js"></script>
+</head>
+<body>
+
+    <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
+	<header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li id="submenu1"><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu1">
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="../San-Salvador/San-Salvador.html">San Salvador</a></li>
+                        <li><a href="../San-Vicente/San-Vicente.html">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu2">
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu3">
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Desarrolladores/Desarrolladores.html">Desarrolladores</a></li>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <!-- boton para mostrar y ocultar el menu -->
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
+  </header>
+
+  <!-- contenedor principal que encierra todos los elementos -->
+	<div class="principal">
+
+        <div class="content">
+
+            <!-- titulo de la pagina -->
+            <div class="title">
+                <h1 class="titulo">Modificar Datos</h1>
+            </div>
+            
+
+            <!-- contenedor para los controles del formulario -->
+            <div class="contenido">
+                        
+                <form class="contacto" name="frmcontacto" method="#">
+                    <h1>Datos</h1><br>
+                    <br>
+                    <fieldset id="datos">
+                        <!-- control ingresar el nombre -->
+                        <label for="Nombre">Nombre</label>
+                        <span>*</span><br>
+                        <input type="text" name="nombre" id="nombre" value="" title="Solo se aceptan letras y espacios" required>
+                        <br/>                        
+
+                        <!-- control para seleccionar el pais -->
+                        <label for="Cabezara ">Cabezara departamental</label>
+                        <span>*</span><br>
+                        <input type="text" name="Cabezara " id="Cabezara" value="" title="Solo se aceptan letras y espacios" required>					
+                        <br>
+
+                        <!-- control para ingresar el correo -->
+                        <label for="Extension">Extensión territorial</label>
+                        <span>*</span><br>
+                        <input type="text" name="Extension" id="Extension" value="" title="Solo se aceptan letras y espacios" required>					
+                        <br/>
+                    </fieldset>	
+
+                    <fieldset id="datos" class="comentarios">
+                        <!-- control para ingresar los comentarios -->
+                       <label for="Fiestas">Fiestas</label>
+                        <span>*</span><br>
+                        <input type="text" name="Fiestas" id="Fiestas" value="" title="Solo se aceptan letras y espacios" required>
+                        <br/>
+                        <label for="Habitantes">Habitantes</label>
+                        <span>*</span><br>
+                        <input type="text" name="Habitantes" id="Habitantes" value="" title="Solo se aceptan letras y espacios" required>
+                        <br/><span> * </span>los campos son obligatorios.
+
+                    </fieldset>	
+
+                    <!-- boton para enviar los datos -->
+                    <fieldset id="datos">
+                        <br/>
+                        <button class="boton" id="enviar" type="submit" value="Guardar">Actualizar</button>						
+                    </fieldset>	
+                    
+                </form>
+
+                <img class="imagen" src="img/editar.png" alt="">
+                
+            </div>
+
+            <!-- contenedor de la consultas realizadas -->
+            <div class="consultas">
+                <h2>Departamentos</h2>
+                <span id="soporte"><b>Su navegador no soporta el almacenamiento local.</b></span>
+
+                <div id="tabla">
+
+                    <!-- tabla en la que se deben mostrar los datos de las consultas -->
+                    <table id="mostrar" border="1">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Cabezara departamental</th>
+                                <th>Extensión territorial</th>
+                                <th>Fiestas</th>
+                                <th>Habitantes</th>
+                                <th>Actualizar</th>                                
+                            </tr>
+                        </thead>
+                        <tbody id="datosDeptos"></tbody>
+                    </table>
+                </div>           
+
+            </div>
+        </div>		
+
+	</div>
+
+    <!-- contenedor para el pie de pagina -->
+	<footer>
+        <div class="contenedor-footer">
+            <div class="contenido-izquierdo">
+                <h3>Redes sociales</h3>
+                <div class="redes-sociales">
+                    <img src="img/facebook.png" alt="facebook">
+                    <a href="https://www.facebook.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                </div>
+                <div class="redes-sociales">
+                    <img src="img/instagram.png" alt="instagram">
+                    <a href="https://www.instagram.com/elsalvadortravel/?hl=es" target="_blank">elsalvadortravel</a>
+                </div>
+                <div class="redes-sociales">
+                    <img src="img/twitter.png" alt="twitter">
+                    <a href="https://twitter.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                </div>
+            </div>
+            <div class="contenido-derecho">
+                <h3>Contáctanos</h3>
+                <p>Correo: info@mitur.gob.sv</p>
+                <p>Tel: 2241-3200</p>
+                <p>Derechos Reservados &#169</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
