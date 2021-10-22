@@ -16,19 +16,23 @@
         <form name="form">  
             
             <!-- control para ingresar el nombre -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required/>
-            <br/><span class="alert" id="alertNombre">Complete el nombre solo con letras.</span><br/>
+            <div class="inputWIcon">
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" required/>
+                <i class="bi bi-file-person-fill"></i>
+                <span class="alert" id="alertNombre">Complete el nombre solo con letras.</span>
+            </div>
             <br/>
                         
             <!-- control para ingresar el usuario -->
-            <label for="user">Usuario:</label>
-            <input type="text" name="user" id="user" required/><br/><br/>
-
+            <div class="inputWIcon">
+                <input type="text" name="user" id="user" placeholder="Usuario" required/>
+                <i class="bi bi-person-fill"></i><br/><br/>
+            </div>
             <!-- control para ingresar la contraseña -->
-            <label for="biografia">Contraseña:</label>
-            <input type="password" name="password" id="password" required/>
-            
+            <div class="inputWIcon">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required/>
+                <i class="bi bi-lock-fill"></i>
+            </div>
             <!-- boton para enviar los datos y registrarse -->
             <div class="btn">
                 <input type="button" name="btnRegistar" id="btnRegistar" value="Registrarse"/>

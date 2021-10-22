@@ -1,7 +1,9 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 body{
-    background-image: url('../img/fondo.jpg');
+    /*background-image: url('../img/fondo.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+    background-color: #313945;
     height: 100vh;
     background-size: cover;
     
@@ -15,17 +17,17 @@ h1 {
     margin: 16px auto;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 1px 1px 0 rgb(126, 125, 125), 2px 2px 0 rgb(65, 64, 64);
+    text-shadow: 1px 1px 0 rgb(80, 79, 79), 2px 2px 0 rgb(65, 64, 64);
 
 }
 
 
 .formulario {
-    background: rgba(49, 57, 69, .7);
+    background: rgba(46, 54, 66, 0.603);
     border: 1px solid #313945;
-    box-shadow: 0px 0px 8px #444;
-    -moz-box-shadow: 0px 0px 8px #444;
-    -webkit-box-shadow: 0px 0px 8px #444;
+    box-shadow: 0px 0px  3px rgb(228, 228, 228);
+    -moz-box-shadow: 0px 0px  3px rgb(228, 228, 228);
+    -webkit-box-shadow: 0px 0px  3px rgb(228, 228, 228);
     margin: 20px auto;
     padding: 20px;
     width: 400px;
@@ -44,8 +46,8 @@ label {
 input{
     width: 80%;
     height: 27px;
-    padding: 5px 20px 0px 20px;
-    margin: 5px 20px;
+    padding: 5px 10px 0px 10px;
+    margin: 10px 10px;
     margin-bottom: 35px;
     background: #3e4857;
     -moz-border-radius: 5px;
@@ -59,6 +61,24 @@ input{
     text-shadow: 0px -1px 0px #334f71;
 }
 
+.inputWIcon input[type="text"]{
+    padding-left: 40px;
+}
+
+.inputWIcon input[type="password"]{
+    padding-left: 40px;
+}
+
+.inputWIcon{position: relative;}
+
+.inputWIcon i{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    padding: 12px 22px;
+    color: white;
+    font-size: 15pt;
+}
 
 input:focus{
 
@@ -102,7 +122,7 @@ span{
     body {
         height: 100vh;
         background-size: cover;
-        background-color: rgb(206, 236, 222);
+        background-color:  #313945;
     }
 }
 
@@ -111,13 +131,18 @@ span{
     body{
         height: 100vh;
         background-size: cover;
-        background-color: rgb(206, 236, 222);
+        background-color: #313945;
     }
 
     .formulario {
         width: 80%;
     }
 
+    
+.inputWIcon i{
+    top: 16px;
+    padding: 12px 18px;
+}
     h1 {
         font-size: 38px;
     }
