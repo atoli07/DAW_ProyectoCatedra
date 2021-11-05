@@ -26,7 +26,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 99999;
 }
 
 
@@ -162,6 +162,7 @@ nav {
     .menu ul li {
         margin: 0;
         font-size: 16px;
+        
     }
 
     .menu ul li a {
@@ -171,6 +172,7 @@ nav {
     .logo {
         margin-top: 10px;
         margin-left: 15px;
+        z-index: 999;
     }
 
     .BarrasMenu {
@@ -189,6 +191,7 @@ nav {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 25px 0;
+        
     }
 
     .enlaces {
@@ -219,7 +222,9 @@ nav {
     .menu>ul>li:hover>a {
         background-color: #313945;
         color: #fff;
+        
     }
+
 
     .menu ul ul {
         position: static;
@@ -227,6 +232,7 @@ nav {
         opacity: 1;
         height: 0;
         overflow: hidden;
+        
     }
 
     .menu ul ul li a {
@@ -260,23 +266,28 @@ nav {
 
 @keyframes animacion {
     from {
-        margin-left: 100%;
+       
+        transform: translatex(-100%);
     }
 
     to {
-        margin-left: 0%;
+   
+        transform: translatex(0%);
     }
 }
 
 nav .activado {
     display: block;
-    animation: animacion 350ms ease-in-out both;
-}
+    animation: animacion .38s ease-in-out both;
+} 
 
 
 /*Reglas de estilo para cambiar el estilo del icono del menu*/
 .barra-1 {
     transform: rotate(-45deg) translate(-10px, 8px);
+    transition-duration: .4s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7, 1, .7, 1);
 }
 
 .barra-2 {
@@ -285,4 +296,7 @@ nav .activado {
 
 .barra-3 {
     transform: rotate(45deg) translate(-10px, -8px);
+    transition-duration: .4s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7, 1, .7, 1);
 }
