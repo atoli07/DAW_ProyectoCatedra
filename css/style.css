@@ -57,6 +57,7 @@ div.mapa{
     color: white;
     padding: 13px;
     display: none;
+    border-radius: 13px;
     background-color: #292C3F;
     z-index: 999;
     border: solid 1px white;
