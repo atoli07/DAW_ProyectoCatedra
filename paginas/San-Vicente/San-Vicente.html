@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tipo de funte de googlo fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/slider.css">
+    <!-- script para los eventos del menu -->
+    <script src="../../js/jquery.min.js"></script>
+	<script src="../../js/menu.js"></script>
+    <script src="../../js/animacionScroll.js"></script>
+    <script src="../../js/slider.js"></script>
+    <title>San Vicente</title>
+</head>
+<body>
+
+    <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
+    <header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li id="submenu1"><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu1">
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="../San-Salvador/San-Salvador.html">San Salvador</a></li>
+                        <li><a href="#">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu2">
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu3">
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Desarrolladores/Desarrolladores.html">Desarrolladores</a></li>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
+  </header>
+
+  <!--seccion para en banner junto con el nombre del departamento-->
+
+  <div class="slideshow">
+      <a name="arriba"></a>
+		<ul class="slider">
+			<li>
+				<img src="img/img1.jpg" alt="">
+				<section class="caption">
+					<h1>SAN VICENTE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img2.jpg" alt="">
+				<section class="caption">
+					<h1>SAN VICENTE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img3.jpg" alt="">
+				<section class="caption">
+					<h1>SAN VICENTE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img4.jpg" alt="">
+				<section class="caption">
+					<h1>SAN VICENTE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+		</ul>
+
+			
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+ 
+
+    <!--Contenedor para el submenu y acceder a la informacion de la pagina-->
+    <div class="submenu">
+        <div class="submenu-content">
+            <ul>
+                <li> <a class="opSubmenu" href="#Datos-Historicos" >Datos historicos</a></li>
+                <li> <a class="opSubmenu" href="#municipios" >Ir a municipio</a></li>
+                <li> <a class="opSubmenu" href="#lugares-turisticos">Lugares turisticos</a></li>
+            </ul>
+        </div>
+    </div>
+        
+
+    <div class="main"><!--contenedor principal de la pagina-->
+
+        <!--Seccion para los primeros datos -->
+        <section class="Primeros-Datos"><a name="Primeros-Datos"></a>
+            <article class="info">
+                <p>
+                    <b>Cabecera departamental: </b> San Vicente.
+                </p>
+                <p>
+                    <b>Extensión territorial: </b>de 267,25 km²
+                </p>
+                <p>
+                    <b>Fecha de fiestas patronales: </b> Las fiestas patronales se celebran en el mes de diciembre en honor de san 
+                    Vicente Abad y Mártir. También son días festivos el 15 de enero en honor al Señor de Esquipulas, y del 25 de 
+                    octubre al 3 de noviembre, por la "Feria de todos los Santos". 
+                </p>
+                <p>
+                    <b>Número de habitantes: </b> cuenta con una población de 53,213 habitantes.
+                </p>
+                
+            </article>
+            
+            <!--Contenedor para el mapa-->
+            <article class="mapa">
+                <img src="img/mapa_sanvicente.png" alt="">
+            </article>
+        </section>
+
+        <!--Seccion para la informacion de historia -->
+        <section class="Datos-Historicos"><a name="Datos-Historicos"></a>
+
+            <h2>Datos historicos</h2>
+
+            <article class="historia">
+
+                <p>
+                    <b>Época precolombina</b>
+                </p>
+                <p>
+                    A principios del siglo XIX, comenzaron a gestarse los movimientos independentistas. San Vicente mantuvo 
+                    su lealtad a la Corona al no apoyó el levantamiento insurreccional de 1811.
+                </p>
+                <p>
+                    Esto le valió el beneplácito de la Corona, que le otorgó el título de ciudad el 12 de julio de 1812. La 
+                    noticia de la independencia centroamericana llegó a San Vicente el 23 de septiembre de 1821, ocho días después 
+                    de la firma. Con la primera Carta Magna Salvadoreña fue creado el departamento de San Vicente, en 1824.
+                </p>
+
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>Época Colonial</b>
+                </p>
+                <p>
+                    A mediados del siglo XVII, varias familias de españoles dedicadas al cultivo del añil residían en las 
+                    poblaciones de Apastepeque, Tepetitán e Ixtepeque. Esta situación era prohibida por las Leyes de Indias, 
+                    que dictaminaban el impedimento de convivir en pueblos de indios.
+                </p>
+                <p>
+                    Precisamente, el Presidente, Gobernador y Capitán General del Reino de Guatemala, don Álvaro de Quiñónez y Osorio, estipuló el 7 de julio de 1634 
+                    que los alcaldes mayores echasen “de dichos pueblos a los españoles, mestizos, negros y mulatos” de dichas
+                    localidades.
+                </p>
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>Fundación</b>
+                </p>
+                <p>
+                    Fue fundada en el año 1635 y llegó a ser capital del Estado entre 1834 a 1840, cuando El Salvador formaba parte 
+                    de la República Federal de Centro América, esto debido a que San Salvador se convirtió en capital federal.
+                     Durante la colonización española, fue una de las localidades más importantes de la Intendencia de San Salvador.
+                </p>
+            </article>
+
+        </section>
+
+        <!--Contenedor para los municipios -->
+        <section class="municipios"><a name="municipios"></a>
+            <h2>Municipios</h2>
+            <p>Apastepeque</p>
+            <p>Guadalupe</p>
+            <p>San Cayetano Istepeque</p>
+            <p>San Esteban Catarina</p>
+            <p>San Ildefonso</p>
+            <p>San Lorenzo</p>
+            <p>San Sebastian</p>
+            <p>San Vicente</p>
+            <p>Santa Clara</p>
+            <p>Santo Domingo</p>
+            <p>Tecoluca</p>
+            <p>Tepetitán</p>
+            <p>Verapaz</p>
+        </section>
+
+        <!--Contenedor para mostrar los lugares turisticos -->
+        <section class="lugares-turisticos"><a name="lugares-turisticos"></a>
+
+            <h2>Lugares turísticos </h2>
+            <article class="lugar">
+                <img src="img/volcan.jpg" alt="">
+                <div class="datos">
+                    <p>Volcan de San Vicente</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/laguna.jpg" alt="">
+                <div class="datos">
+                    <p>Laguna de Apastepeque</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/torre.jpg" alt="">
+                <div class="datos">
+                    <p>Torre de San Vicente</p>
+                </div>
+                </article>
+            <article class="lugar">
+                <img src="img/turicentro.jpg" alt="">
+                <div class="datos">
+                    <p>Turicentro Amapulapa</p>
+            </article>
+            <article class="lugar">
+                <img src="img/mirador.jpg" alt="">
+                <div class="datos">
+                    <p>Mirador Santa Clara</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/catedral.jpg" alt="">
+                <div class="datos">
+                    <p>Catedral de San Vicente</p>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+    <a href="#arriba" class="arriba" title="Ir Arriba"></a><!--se agrego el link para redirigir al inicio de la pagina-->
+
+
+    <!--Pie de pagina -->
+    <footer>
+        <div class="contenedor-footer">
+              <div class="contenido-izquierdo">
+                  <h3>Redes sociales</h3>
+                      <div class="redes-sociales">
+                          <img src="img/facebook.png" alt="facebook">
+                          <a href="https://www.facebook.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/instagram.png" alt="instagram">
+                          <a href="https://www.instagram.com/elsalvadortravel/?hl=es" target="_blank">elsalvadortravel</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/twitter.png" alt="twitter">
+                          <a href="https://twitter.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+              </div>
+  
+              <div class="contenido-derecho">
+                      <h3>Contáctanos</h3>
+                      <p>Correo: info@mitur.gob.sv</p>
+                      <p>Tel: 2241-3200</p>
+                      <p>Derechos Reservados &#169</p>
+              </div>
+        </div>
+      </footer>
+
+</body>
+</html>
