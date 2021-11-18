@@ -31,59 +31,56 @@ body{
 	width: 100%;
 	height: 560px;
 	background-color: rgba(77, 77, 77, 0.8);
+	background-size: cover;
 	background-position: center;
-	transition: all .1s ease-in;
+    position: relative;
+    transition: all .1s ease-in;
 }
 
+.banner ul {
+	list-style: none;
+}
+
+.cotenido-banner li, ul{
+    width: 100%;
+}
+
+.cotenido-banner li{overflow: hidden;}
+
+.cotenido-banner li img{
+    width: 100%;
+    height: 560px;
+    opacity: 0.5;
+}
 
 .cotenido-banner{
-	width: 100%;
-	height: 100%;
 	color: white;
 	background-color: rgba(77, 77, 77, 0.6);
-	display: flex;
+}
+
+.cotenido-banner .caption{
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	
+    display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
 
-.cotenido-banner div{
-    width: 100%;
-	height: 560px;
-    position: relative;
-    top: 0;
-    left: 0;
+    text-align: center;
+    color: #fff;
     z-index: 1;
 }
 
-.cotenido-banner img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    z-index: 2;
+.cotenido-banner h1{
+	font-size: 60px;
 }
 
-.title-banner{
-    color: white;
-    position: absolute;
-    top: 2.5em;
-    left: 5em;
-	font-size: 3.7rem;
-	text-align: center;
-    z-index: 3;
-    opacity: 1;
-}
-
-.subtitle-banner{
-    color: white;
-    position: absolute;
-    top: 6em;
-    left: 10em;
-	font-size: 2.7rem;
-	text-align: center;
-    z-index: 3;
-    opacity: 1;
+.cotenido-banner h2{
+    font-size: 30px;
 }
 
 /*Reglas de estilo para el contenido*/
@@ -429,7 +426,6 @@ footer{
 
 /*Reglas de estilo para que el contenido de la pagina sea adaptativo*/
 
-
 @media screen and (max-width:1024px) {
 
     .main{
@@ -478,11 +474,20 @@ footer{
     .celebridades{
         margin-bottom: 3%;
     }
-      
+
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
+   
 }
-
-
-
 
 @media screen and (max-width:824px) {
 
@@ -532,7 +537,19 @@ footer{
     .lugar img{
         height: 290px;
     }
-    
+
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width:737px) {
@@ -540,6 +557,18 @@ footer{
     .municipios p{
         margin: 2% 9%;
     }
+
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
 
 }
 
@@ -549,8 +578,34 @@ footer{
         margin: 2% 7%;
     }
 
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
+
 }
 
+@media screen and (max-width: 600px) {
+
+	.cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width:100%;
+	}
+}
 
 @media screen and (max-width:540px) {
 
@@ -579,10 +634,19 @@ footer{
         height: 270px;
     }
 
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
+
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
+
 }
-
-
-
 
 @media screen and (max-width:414px) {
 
@@ -615,12 +679,23 @@ footer{
 
     .content img {
         width: 190px;
-        float:none;
+        float: none;
         margin: 20px 45px;
     }
 
-}
+    .cotenido-banner .caption h1 {
+		font-size: 60px;
+	}
 
+	.cotenido-banner .caption h2 {
+		font-size: 30px;
+	}
+
+	.cotenido-banner li img {
+		width: 100%;
+	}
+
+}
 
 /* submenu */
 
