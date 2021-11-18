@@ -32,6 +32,7 @@ body{
 	background-position: center;
     position: relative;
     transition: all .1s ease-in;
+	margin-bottom: 30px;
 }
 
 .banner ul {
@@ -52,6 +53,7 @@ body{
 
 .cotenido-banner{
 	color: white;
+	height: 560px;
 	background-color: rgba(77, 77, 77, 0.6);
 }
 
@@ -687,6 +689,14 @@ footer{
 	.cotenido-banner li img {
 		width: 100%;
 	}
+	
+	.cotenido-banner .caption h1 {
+        font-size: 35px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 25px;
+    }
 
 }
 /* submenu */
