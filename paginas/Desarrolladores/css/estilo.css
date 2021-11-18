@@ -26,76 +26,66 @@ body{
 
 /*Reglas de estilo para el banner o slider de presentacion*/
 
-.banner{
-
-	width: 100%;
-	height: 560px;
-	background-color: rgba(77, 77, 77, 0.8);
-	background-size: cover;
-	background-position: center;
-	background-image: url('../img/img1.jpg');
-	transition: all .1s ease-in;
-	animation: slider 20s infinite linear;
+.banner {
+    width: 100%;
+    height: 560px;
+    background-color: rgba(77, 77, 77, 0.8);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: all .1s ease-in;
+    margin-bottom: 30px;
 }
 
-
-.cotenido-banner{
-
-	width: 100%;
-	height: 100%;
-	color: white;
-	background-color: rgba(77, 77, 77, 0.6);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.banner ul {
+    list-style: none;
 }
 
-
-.cotenido-banner h1{
-
-	font-size: 3.7rem;
-	text-align: center;
+.cotenido-banner li,
+ul {
+    width: 100%;
 }
 
-@keyframes slider{
-
-	0%{
-		background-image: url('../img/img1.jpg');
-	}
-
-	25%{
-		background-image: url('../img/img1.jpg');
-	}
-
-
-	26%{
-		background-image: url('../img/img2.jpg');
-	}
-
-	50%{
-		background-image: url('../img/img2.jpg');
-	}
-
-
-	51%{
-		background-image: url('../img/img3.jpg');
-	}
-
-	75%{
-		background-image: url('../img/img3.jpg');
-	}
-
-
-	76%{
-		background-image: url('../img/img4.jpg');
-	}
-
-	100%{
-		background-image: url('../img/img4.jpg');
-	}
+.cotenido-banner li {
+    overflow: hidden;
 }
 
+.cotenido-banner li img {
+    width: 100%;
+    height: 560px;
+    opacity: 0.5;
+}
+
+.cotenido-banner {
+    color: white;
+    height: 560px;
+    background-color: rgba(77, 77, 77, 0.6);
+}
+
+.cotenido-banner .caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.cotenido-banner h1 {
+    font-size: 60px;
+}
+
+.cotenido-banner h2 {
+    font-size: 30px;
+}
 
 /*Reglas de estilo para el contenido*/
 .equipo{
@@ -223,8 +213,16 @@ footer{
     }
 
 
-    .cotenido-banner h1{
-        font-size: 2.2rem;
+    .cotenido-banner .caption h1 {
+        font-size: 60px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
     }
     
     .equipo p{
@@ -245,10 +243,17 @@ footer{
     }
 
     
-    .cotenido-banner h1{
-        font-size: 1.8rem;
+    .cotenido-banner .caption h1 {
+        font-size: 60px;
     }
 
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
    
     .equipo p {
         width: 40%;
@@ -267,6 +272,18 @@ footer{
         margin: 5% 5%;
     }
 
+    .cotenido-banner .caption h1 {
+        font-size: 50px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:667px) {
@@ -277,6 +294,33 @@ footer{
         margin: 5% 5%;
     }
 
+    .cotenido-banner .caption h1 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .cotenido-banner .caption h1 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
 }
 
 
@@ -288,6 +332,18 @@ footer{
         font-size: 1.1rem;
         margin: 5% 4%;
     }    
+
+    .cotenido-banner .caption h1 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner .caption h2 {
+        font-size: 30px;
+    }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
 
 }
 
@@ -301,5 +357,15 @@ footer{
         font-size: 1.1rem;
         margin: 5% 5%;
     }
+
+    .cotenido-banner li img {
+        width: 100%;
+    }
+
+    .cotenido-banner .caption h1 {
+        font-size: 25px;
+    }
+
+    
 
 }
