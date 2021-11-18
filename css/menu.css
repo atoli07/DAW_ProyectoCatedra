@@ -33,6 +33,8 @@ body {
 .logo {
     width: 170px;
     height: 90px;
+    margin-right: 120px;
+    margin-left: 40px;
 }
 
 nav {
