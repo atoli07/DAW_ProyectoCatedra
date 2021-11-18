@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tipo de funte de googlo fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/slider.css">
+    <!-- script para los eventos del menu -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.msAccordion.js"></script>
+	<script src="../../js/menu.js"></script>
+    <script src="../../js/animacionScroll.js"></script>
+    <script src="../../js/slider.js"></script>
+    <title>Sonsonate</title>
+</head>
+<body>
+    
+    <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
+    <header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li id="submenu1"><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu1">
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="../San-Salvador/San-Salvador.html">San Salvador</a></li>
+                        <li><a href="../San-Vicente/San-Vicente.html">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu2">
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="#">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu3">
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Desarrolladores/Desarrolladores.html">Desarrolladores</a></li>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
+  </header>
+
+
+  <!--seccion para en banner junto con el nombre del departamento-->
+
+  <div class="slideshow">
+      <a name="arriba"></a>
+		<ul class="slider">
+			<li>
+				<img src="img/img1.jpg" alt="">
+				<section class="caption">
+					<h1>SONSONATE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img2.jpg" alt="">
+				<section class="caption">
+					<h1>SONSONATE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img3.jpg" alt="">
+				<section class="caption">
+					<h1>SONSONATE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img4.jpg" alt="">
+				<section class="caption">
+					<h1>SONSONATE</h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+		</ul>
+
+			
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+
+
+    <!--Contenedor para el submenu y acceder a la informacion de la pagina-->
+    <div class="submenu">
+        <div class="submenu-content">
+            <ul>
+                <li> <a class="opSubmenu" href="#Datos-Historicos" >Datos historicos</a></li>
+                <li> <a class="opSubmenu" href="#municipios" >Ir a municipio</a></li>
+                <li> <a class="opSubmenu" href="#lugares-turisticos">Lugares turisticos</a></li>
+                <li> <a class="opSubmenu" href="#celebridades">Personajes celebres</a></li>
+            </ul>
+        </div>
+    </div>
+          
+
+    <div class="main"><!--contenedor principal de la pagina-->
+
+        <!--Seccion para los primeros datos -->
+        <section class="Primeros-Datos"><a name="Primeros-Datos"></a>
+            <article class="info">
+                <p>
+                    <b>Cabecera departamental: </b>Sonsonate
+                </p>
+                <p>
+                    <b>Extensión territorial: </b>1226 km²
+                </p>
+                <p>
+                    <b>Fecha de fiestas patronales: </b> Las fiestas patronales de Sonsonate se celebran del 25 de enero al 2 de febrero de cada año, en honor a la Virgen de la Candelaria.
+                </p>
+                <p>
+                    <b>Número de habitantes: </b> Tiene una población estimada de 438 960 habitantes para el año 2013.
+                </p>
+                
+            </article>
+            
+    
+            <!--Contenedor para el mapa-->
+            <article class="mapa">
+                <img src="img/mapa-del-departamento-de-sonsonate.png" alt="">
+            </article>
+        </section>
+
+
+        <!--Seccion para la informacion de historia -->
+        <section class="Datos-Historicos"><a name="Datos-Historicos"></a>
+
+            <h2>Datos</h2>
+
+            <article class="historia">
+
+                <p>
+                    <b>La cuidad de cocoteros </b>
+                </p>
+                <p>
+                    es importante saber que históricamente a la cabecera
+                     departamental del departamento de Sonsonate se le distingue como “la ciudad de los cocoteros”. 
+                     Esto debido a que antiguamente en esta localidad era muy frecuente ver cantidades de palmeras de coco.
+                     
+
+
+                </p>
+  
+
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>El pedregal de San Isidro</b>
+                </p>
+                <p>
+                    Un hecho histórico bastante significativo sucedió en  1783, año en el cual el volcán conocido como San Marcelino tuvo la fuerza
+                     para crear una corriente de magma tan grande que pudo desparramarse hasta las tierras bajas.
+                </p>
+                <p>
+                    Esto dio origen a lo que se le ha dado el nombre de “el Pedregal de San Isidro”. Con respecto a este suceso, quedó documentado la versión de los habitantes del lugar, quienes manifestaron que la lava bajaba lentamente,
+                     por lo cual pudieron escapar de la muerte. Entonces, lentamente  el calor de la lava fue disminuyéndose, procediendo a solidificarse y pasando a convertirse en piedra.
+                </p>
+
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>Fundación</b>
+                </p>
+                <p>
+                    Históricamente, Sonsonate era una vieja provincia de la Capitanía General de Guatemala. Sin embargo, pudo alcanzar 
+                    la independencia de los españoles en el año 1821. Pero no fue sino hasta 1824 cuando pudo, conjuntamente con la provincia de San Salvador, 
+                    llegar a formar lo que hoy se conoce como la República de El Salvador.
+                </p>
+                <p>
+                    Según los historiadores, la ciudad de Sonsonate se fundó hacia el año 1552.
+                     Pero bajo el nombre de Villa de la Santísima Trinidad de Sonsonate. En este sentido,  para la época de la colonia sirvió como sede de la Alcaldía Mayor de Sonsonate.
+                </p>
+            </article>
+
+        </section>
+        
+        <!--Contenedor para los municipios -->
+        <section class="municipios"> <a name="municipios"></a> 
+            <h2>Municipios</h2>
+            <p>Acajutla</p>
+            <p>Armenia</p>
+            <p>Caluco</p>
+            <p>Cuisnahuat</p>
+            <p>Izalco</p>
+            <p>Juayua</p>
+            <p>Nahuizalco</p>
+            <p>Nahulingo</p>
+            <p>Salcoatitan</p>
+            <p>San Antonio del Monte </p>
+            <p>San Julian</p>
+            <p>Santa Catarina Masahuat</p>
+            <p>Santa Isabel Ishuatan</p>
+            <p>Santo Domingo de Guzman</p>
+            <p>Sonsonate</p>
+            <p>Sonzacate</p>
+
+        </section>
+
+
+        <!--Contenedor para mostrar los lugares turisticos -->
+        <section class="lugares-turisticos"><a name="lugares-turisticos"></a>
+
+
+            <h2>Lugares turísticos </h2>
+            <article class="lugar">
+                <img src="img/Chorros de la calera.jpg">
+                <div class="datos">
+                    <p>Chorros de la calera</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/Catedral de Sonsonate.jpg">
+                <div class="datos">
+                    <p>Catedral de Sonsonate</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/Museo de la imprenta.jpg">
+                <div class="datos">
+                    <p>Museo de la imprenta</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/cascada-de-escuco.jpg">
+                <div class="datos">
+                    <p>Cascada el Escuco</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/Museo del ferrocarril.jpg">
+                <div class="datos">
+                    <p>Museo del Ferrocarril </p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/Volcan de Izalco.jpg">
+                <div class="datos">
+                    <p>Volcan de Izalco</p>
+                </div>
+            </article>
+        </section>
+
+
+        <!--Contenedor para mostrar las celebridades -->
+        
+        <section class="acordeon celebridades"><a name="celebridades"></a>
+            <h2>Personajes célebres</h2>
+            <article>
+                <div id="accordion3" class="accordionWrapper">
+                    <div class="set set1">
+                        <div class="title">
+                            <h3>Salarrue</h3>
+                        </div>
+                        <div class="content">
+                            <img src="img/200px-Salarrue_joven.jpg">
+                            <h3>Salarrue</h3>
+                            <p>Salvador Efraín Salazar Arrué, popularmente conocido como Salarrué. Nace en el municipio de Sonsonate un 22 de octubre del año 1899. 
+                                Muere en el cantón Los Planes de Renderos del departamento de San Salvador el 27 de noviembre de 1975.</p>
+                        </div>
+                    </div>
+                    <div class="set set2">
+                        <div class="title"><h3>Rafael Campo</h3></div>
+                        <div class="content">
+                            <img src="img/Rafael_Campo.jpg">
+                            <h3>Rafael Campo</h3>
+                            <p>Salió victorioso en los comicios y con fecha 30 de enero de 1856 fue declarado Presidente Electo para el período 
+                                constitucional 1856-1858. A pesar de su renuncia fue obligado a aceptar el cargo Supremo el que recibió el 12 de febrero de 1856.</p>
+                        </div>
+                    </div>
+                    <div class="set set3">
+                        <div class="title"><h3>Teniente Coronel Oscar Osorio</h3></div>
+                        <div class="content">
+                            <img src="img/Oscar_Osorio.jpg">
+                            <h3>Teniente Coronel Oscar Osorio</h3>
+                            <p>gobernó como miembro del Consejo revolucionario de gobierno del 14 de diciembre de 1948 al 14 de septiembre de 1950.
+                                Fue Presidente Constitucional de El Salvador desde el 14 de septiembre de 1950</p>
+                        </div>
+                    </div>
+                    <div class="set set4">
+                        <div class="title"><h3>Rafael Barrientos</h3></div>
+                        <div class="content">
+                            <img src="img/Rafael Barrientos.jpg">                
+                            <h3>Rafael Barrientos</h3>
+                            <p>Nació en Armenia, departamento de Sonsonate en julio de 1919, 
+                                fue fundador de la Orquesta de “Lito Barrientos”. Entre los premiso recibidos están: “El congo de oro”
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <a href="#arriba" class="arriba" title="Ir Arriba"></a><!--se agrego el link para redirigir al inicio de la pagina-->
+
+
+    <!--Pie de pagina -->
+    <footer>
+        <div class="contenedor-footer">
+              <div class="contenido-izquierdo">
+                  <h3>Redes sociales</h3>
+                      <div class="redes-sociales">
+                          <img src="img/facebook.png" alt="facebook">
+                          <a href="https://www.facebook.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/instagram.png" alt="instagram">
+                          <a href="https://www.instagram.com/elsalvadortravel/?hl=es" target="_blank">elsalvadortravel</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/twitter.png" alt="twitter">
+                          <a href="https://twitter.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+              </div>
+  
+              <div class="contenido-derecho">
+                      <h3>Contáctanos</h3>
+                      <p>Correo: info@mitur.gob.sv</p>
+                      <p>Tel: 2241-3200</p>
+                      <p>Derechos Reservados &#169</p>
+              </div>
+        </div>
+      </footer>
+<script src="../../js/CargarAcordeon.js"></script>
+</body>
+</html>
