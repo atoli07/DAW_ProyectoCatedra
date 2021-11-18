@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tipo de funte de googlo fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="../../js/jquery.min.js"></script>
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/slider.css">
+    <script src="../../js/slider.js"></script>
+    <!-- script para los eventos del menu -->
+	<script src="../../js/menu.js"></script>
+    <script src="js/cargarDatos.js"></script>
+    
+    <title>Desarolladores</title>
+</head>
+<body>
+    <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
+    <header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li id="submenu1"><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu1">
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="../San-Salvador/San-Salvador.html">San Salvador</a></li>
+                        <li><a href="../San-Vicente/San-Vicente.html">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu2">
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu3">
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="../La-union/union.html">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Desarrolladores</a></li>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
+  </header>
+
+    <!--seccion para en banner junto con el nombre del departamento-->
+
+    <div class="slideshow">
+      <a name="arriba"></a>
+		<ul class="slider">
+			<li>
+				<img src="img/img1.jpg" alt="">
+				<section class="caption">
+					<h1>DESARROLLADORES</h1>
+				</section>
+			</li>
+			<li>
+				<img src="img/img2.jpg" alt="">
+				<section class="caption">
+					<h1>DESARROLLADORES</h1>
+				</section>
+			</li>
+			<li>
+				<img src="img/img3.jpg" alt="">
+				<section class="caption">
+					<h1>DESARROLLADORES</h1>
+				</section>
+			</li>
+			<li>
+				<img src="img/img4.jpg" alt="">
+				<section class="caption">
+					<h1>DESARROLLADORES</h1>
+				</section>
+			</li>
+		</ul>
+
+			
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+    
+
+    <div class="main"><!--Contenedor principal-->
+        
+        <section class="equipo" id="equipo"> <!--seccion para los datos del equipo-->
+            
+        </section>
+
+    </div>
+    
+
+    <!--pie de pagina-->
+    <footer>
+        <div class="contenedor-footer">
+              <div class="contenido-izquierdo">
+                  <h3>Redes sociales</h3>
+                      <div class="redes-sociales">
+                          <img src="img/facebook.png" alt="facebook">
+                          <a href="https://www.facebook.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/instagram.png" alt="instagram">
+                          <a href="https://www.instagram.com/elsalvadortravel/?hl=es" target="_blank">elsalvadortravel</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/twitter.png" alt="twitter">
+                          <a href="https://twitter.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+              </div>
+  
+              <div class="contenido-derecho">
+                      <h3>Contáctanos</h3>
+                      <p>Correo: info@mitur.gob.sv</p>
+                      <p>Tel: 2241-3200</p>
+                      <p>Derechos Reservados &#169</p>
+              </div>
+        </div>
+      
+	</footer>
+
+</body>
+</html>
