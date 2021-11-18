@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tipo de funte de googlo fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- hoja de estilo para el menu -->
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/slider.css">
+    <!-- script para los eventos del menu -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.msAccordion.js"></script>
+	<script src="../../js/menu.js"></script>
+    <script src="../../js/animacionScroll.js"></script>
+    <script src="../../js/slider.js"></script>
+    <title>La Union</title>
+</head>
+<body>
+
+    <!--Cabezera de la pagina con el menu de navegacion del sitio web-->
+    <header id="cabezera">                            
+        <nav class="menu">
+            <a href="#">
+                <img src="img/logo.JPG" class="logo" alt="logo">
+            </a>
+            <ul class="enlaces" id="mostrarMenu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li id="submenu1"><a href="#">Zona Central</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu1">
+                        <li><a href="../Chalatenango/Chalatenango.html">Chalatenango</a></li>
+                        <li><a href="../Cuscatlan/Cuscatlan.html">Cuscatlan</a></li>
+                        <li><a href="../Cabañas/cabañas.html">Cabañas</a></li>
+                        <li><a href="../San-Salvador/San-Salvador.html">San Salvador</a></li>
+                        <li><a href="../San-Vicente/San-Vicente.html">San Vicente</a></li>
+                        <li><a href="../La-Paz/La-Paz.html">La Paz</a></li>
+                        <li><a href="../La-Libertad/La-Libertad.html">La Libertad</a></li>
+                    </ul>
+                </li>
+                <li id="submenu2"><a href="#">Zona Occidental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu2">
+                        <li><a href="../Ahuchapan/Auchapan.html">Ahuachapan</a></li>
+                        <li><a href="../Sonsonate/Sonsonate.html">Sonsonate</a></li>
+                        <li><a href="../Santa-Ana/santa-ana.html">Santa Ana</a></li>
+                    </ul>
+                </li>
+                <li id="submenu3"><a href="#">Zona Oriental</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul id="menu3">
+                        <li><a href="../morazan/morazan.html">Morazan</a></li>
+                        <li><a href="../San-Miguel/san-miguel.html">San Miguel</a></li>
+                        <li><a href="../Usulutan/Usulutan.html">Usulutan</a></li>
+                        <li><a href="#">La Union</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Desarrolladores/Desarrolladores.html">Desarrolladores</a></li>
+				<li><a href="../Contacto/Contactanos.html">Contáctanos</a></li>
+				
+            </ul>
+            <button class="BarrasMenu" id="btnmostrarMenu" type="button">
+                <span id="barra1"></span>
+                <span id="barra2"></span>
+                <span id="barra3"></span>
+            </button>
+        </nav>         
+  </header>
+
+
+  <!--seccion para en banner junto con el nombre del departamento-->
+
+  <div class="slideshow">
+      <a name="arriba"></a>
+		<ul class="slider">
+			<li>
+				<img src="img/img1.jpg" alt="">
+				<section class="caption">
+					<h1>LA UNION </h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img2.jpg" alt="">
+				<section class="caption">
+					<h1>LA UNION </h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img3.jpg" alt="">
+				<section class="caption">
+					<h1>LA UNION </h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+			<li>
+				<img src="img/img4.jpg" alt="">
+				<section class="caption">
+					<h1>LA UNION </h1>
+                    <h2>EL SALVADOR</h2>
+				</section>
+			</li>
+		</ul>
+
+			
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+
+
+    <!--Contenedor para el submenu y acceder a la informacion de la pagina-->
+    <div class="submenu">
+        <div class="submenu-content">
+            <ul>
+                <li> <a class="opSubmenu" href="#Datos-Historicos" >Datos historicos</a></li>
+                <li> <a class="opSubmenu" href="#municipios" >Ir a municipio</a></li>
+                <li> <a class="opSubmenu" href="#lugares-turisticos">Lugares turisticos</a></li>
+                <li> <a class="opSubmenu" href="#celebridades">Personajes celebres</a></li>
+            </ul>
+        </div>
+    </div>
+          
+
+    <div class="main"><!--contenedor principal de la pagina-->
+
+        <!--Seccion para los primeros datos -->
+        <section class="Primeros-Datos"><a name="Primeros-Datos"></a>
+            <article class="info">
+                <p>
+                    <b>Cabecera departamental: </b> es la ciudad y puerto de La Unión.
+                </p>
+                <p>
+                    <b>Extensión territorial: </b>de 2.074 km²
+                </p>
+                <p>
+                    <b>Fecha de fiestas patronales: </b> Las fiestas patronales de La Unión se celebran el 4 de noviembre, en honor de San Carlos Borromeo
+                </p>
+                <p>
+                    <b>Número de habitantes: </b> cuenta con una población de 34.045 (2012) habitantes.
+                </p>
+                
+            </article>
+            
+    
+            <!--Contenedor para el mapa-->
+            <article class="mapa">
+                <img src="img/mapa.png" alt="">
+            </article>
+        </section>
+
+        <!--Seccion para la informacion de historia -->
+        <section class="Datos-Historicos"><a name="Datos-Historicos"></a>
+
+            <h2>Datos historicos</h2>
+
+            <article class="historia">
+
+                <p>
+                    <b>Época precolombina</b>
+                </p>
+                <p>
+                    El periodo prehispánico muchos habitantes vinieron de Europa para radicarse en la parte central de América 
+                    como El Salvador, Honduras y Guatemala. También por este motivo es que en El Salvador se pueden encontrar diferentes 
+                    rasgos físicos y estos varían dependiendo de la ubicación del país. En este país existe la mezcla de los mayas y los
+                     europeos.
+
+                </p>
+                <p>
+                    La lengua que se hablaba en la región central y occidental del país era el nahuatl, del cual aún se conservan sus raíces primeras, 
+                    aunque esto no impedía que se hablaran otras lenguas como era el caso del pokomán en Santa Ana y el potón en la región
+                     norte del departamento de La Unión.
+                </p>
+
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>Época Colonial</b>
+                </p>
+                <p>
+                    El territorio de lo que hoy es la Ciudad de La Unión, fue divisado por primera vez, desde las aguas del Océano Pacífico, cuando 
+                    a principios del año 1522, el piloto Andrés Niño llegó al Golfo de Conchagua (Golfo Chorotega), y lo bautizó con el nombre
+                     de Golfo de Fonseca, en honor al Obispo de Burgos y Presidente del Consejo de Indias, Fraile Juan Rodríguez de Fonseca.
+                </p>
+                <p>
+                    Andrés Niño desembarcó en la Isla de Meanguera del Golfo frente a las actuales playas del Departamento de La Unión, la conquista 
+                    no se inició, sino dos años más tarde, en 1524 cuando llegó al territorio salvadoreño el Capitán Hernán Cortés. En 1588 el pirata 
+                    Francis Drake amenazó a los habitantes del Golfo de Fonseca; así mismo para el año de 1596 los Frailes Seráficos Españoles
+                     fundaron la Guardianía de Nuestra Señora de las Nieves de Amapala en el lugar que hoy se conoce como Pueblo Viejo.
+                </p>
+            </article>
+
+            <article class="historia">
+                <p>
+                    <b>Fundación</b>
+                </p>
+                <p>
+                    Descubierto por Andrés Niño: 1522 Título de ciudad: 28 de febrero de 1854 (167 años) Cabecera
+                     departamental: 22 de junio de 1865 (156 años).
+                     El departamento de La Unión, fue fundado por Ley de 22 de Julio de 1865 sancionado por el Presidente Dr Francisco Dueñas
+                </p>
+            </article>
+
+        </section>
+
+
+        <!--Contenedor para los municipios -->
+        <section class="municipios"><a name="municipios"></a>
+            <h2>Municipios</h2>
+            <p>Anamoros</p>
+            <p>Bolivar</p>
+            <p>Concepcion de oriente</p>
+            <p>Conchagua</p>
+            <p>El Carmen</p>
+            <p>El Sauce </p>
+            <p>Intupica</p>
+            <p>La union</p>
+            <p>Lislique</p>
+            <p>Meanguera del Golfo</p>
+            <p>Nueva Esparta</p>
+            <p>Pasaquina</p>
+            <p>Poloros</p>
+            <p>San Alejo</p>
+            <p>San Jose</p>
+            <p>Santa Rosa de Lima</p>
+            <p>Yayantique</p>
+            <p>Yucuaiquin</p>
+        </section>
+
+
+        <!--Contenedor para mostrar los lugares turisticos -->
+        <section class="lugares-turisticos"><a name="lugares-turisticos"></a>
+
+            <h2>Lugares turísticos </h2>
+            <article class="lugar">
+                <img src="img/espiritu.jpg" alt="">
+                <div class="datos">
+                    <p>El Espiritu de la Montaña</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/volcan.jpg" alt="">
+                <div class="datos">
+                    <p>volcán de Conchagua</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/parque.jpg" alt="">
+                <div class="datos">
+                    <p>Parque la Familia</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/chiquirrin.jpg" alt="">
+                <div class="datos">
+                    <p>Playa El Chiquirrin</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/isla_perico.jpg" alt="">
+                <div class="datos">
+                    <p>Isla Perico</p>
+                </div>
+            </article>
+            <article class="lugar">
+                <img src="img/bahia.jpg" alt="">
+                <div class="datos">
+                    <p>Bahia de la Union</p>
+                </div>
+            </article>
+        </section>
+
+
+        <!--Contenedor para mostrar las celebridades -->
+
+        <section class="acordeon celebridades"><a name="celebridades"></a>
+            <h2>Personajes célebres</h2>
+            <article>
+                <div id="accordion3" class="accordionWrapper">
+                    <div class="set set1">
+                        <div class="title">
+                            <h3>Napoleón Viera Altamirano</h3>
+                        </div>
+                        <div class="content">
+                            <img src="img/napoleon.jpg">                
+                            <h3>Napoleón Viera Altamirano</h3>
+                            <p>Periodista y fundador del Diario de Hoy</p>
+                        </div>
+                    </div>
+                    <div class="set set2">
+                        <div class="title"><h3>Juan Jose Guzman</h3></div>
+                        <div class="content">
+                           <img src="img/juan.jpg">
+                            <h3>Juan Jose Guzman</h3>
+                            <p> militar, licenciado y político salvadoreño; 
+                            que ocupó el cargo de presidente de El Salvador: provisionalmente desde 12 de abril al 26 de septiembre de 1842 </p>
+                        </div>
+                    </div>
+                    <div class="set set3">
+                        <div class="title"><h3>Hugo Lindo Olivares</h3></div>
+                        <div class="content">
+                            <img src="img/Hugo.jpg">                
+                            <h3>Hugo Lindo Olivares</h3>
+                            <p>Hugo Lindo Olivares fue un escritor, diplomático, político y abogado salvadoreño</p>
+                        </div>
+                    </div>
+                    <div class="set set4">
+                        <div class="title"><h3>Juan Alwood Paredes</h3></div>
+                        <div class="content">
+                            <img src="img/paredes.jpg">                
+                            <h3>Juan Alwood Paredes</h3>
+                            <p>Fue presidente del colegio médico de El Salvador.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </article>
+        </section>
+    </div>
+    <a href="#arriba" class="arriba" title="Ir Arriba"></a><!--se agrego el link para redirigir al inicio de la pagina-->
+
+
+    <!--Pie de pagina -->
+    <footer>
+        <div class="contenedor-footer">
+              <div class="contenido-izquierdo">
+                  <h3>Redes sociales</h3>
+                      <div class="redes-sociales">
+                          <img src="img/facebook.png" alt="facebook">
+                          <a href="https://www.facebook.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/instagram.png" alt="instagram">
+                          <a href="https://www.instagram.com/elsalvadortravel/?hl=es" target="_blank">elsalvadortravel</a>
+                      </div>
+                      <div class="redes-sociales">
+                          <img src="img/twitter.png" alt="twitter">
+                          <a href="https://twitter.com/MITURElSalvador" target="_blank">MITURElSalvador</a>
+                      </div>
+              </div>
+  
+              <div class="contenido-derecho">
+                      <h3>Contáctanos</h3>
+                      <p>Correo: info@mitur.gob.sv</p>
+                      <p>Tel: 2241-3200</p>
+                      <p>Derechos Reservados &#169</p>
+              </div>
+        </div>
+      </footer>
+    <script src="../../js/CargarAcordeon.js"></script>  
+</body>
+</html>
