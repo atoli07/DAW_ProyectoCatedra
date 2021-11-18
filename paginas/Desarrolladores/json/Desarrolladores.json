@@ -1,0 +1,42 @@
+{ 
+    
+    "items": [ 
+
+    {
+        "imagen" : "img/user1.png",
+        "nombre" : "Victor Samuel Panameño Santos ",
+        "carnet" : "PS211109",
+        "edad" : 19,
+        "carrera" : "Técnico en Ingeniería en Computación"},
+
+    {
+        "imagen" : "img/user2.png",
+        "nombre" : "Hazel Marbeli Hernández Ramírez",
+        "carnet" : "HR210509",
+        "edad" : 19,
+        "carrera" : "Técnico en Ingeniería en Computación"},
+
+    {
+        "imagen" : "img/user2.png",
+        "nombre" : "Jocelyn Guadalupe Baires Rivera",
+        "carnet" : "BR200378",
+        "edad" : 19,
+        "carrera" : "Técnico en Ingeniería en Computación"},
+
+    {
+        "imagen" : "img/user1.png",
+        "nombre" : "Wilber Francisco Chacón Erroa",
+        "carnet" : "CE211044",
+        "edad" : 19,
+        "carrera" : "Técnico en Ingeniería en Computación"},
+
+    {
+        "imagen" : "img/user2.png",
+        "nombre" : "Alexia María Ayala Alférez",
+        "carnet" : "AA180552",
+        "edad" : 20,
+        "carrera" : "Técnico en Ingeniería en Computación"}
+  ]
+}
+
+     
